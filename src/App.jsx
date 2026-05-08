@@ -75,12 +75,18 @@ const apps = [
   },
   {
     id: 4,
-    title: "Portal del Colaborador",
-    summary: "Autogestión de RRHH, boletas de pago y certificados de salud.",
-    description: "Digitalizamos la relación laboral. Los empleados pueden acceder a sus documentos, solicitar vacaciones y ver sus resultados de exámenes médicos de forma segura.",
-    category: "RRHH",
-    industries: ["Corporativo", "Industria", "Servicios", "Retail"],
-    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=800",
+    title: "Caracterización de Riesgos Laborales",
+    summary: "Evaluación integral de riesgos, herramientas y monitoreo ambiental por puesto de trabajo.",
+    description: "Sistema especializado en la caracterización y evaluación de riesgos laborales por puesto de trabajo. Permite identificar peligros, evaluar herramientas e instrumentos, gestionar el monitoreo ambiental ocupacional y mantener una matriz IPERC dinámica para el cumplimiento normativo en SST.",
+    category: "Salud Ocupacional",
+    modules: [
+      "Evaluación de riesgos por puesto de trabajo",
+      "Inventario de herramientas e instrumentos",
+      "Monitoreo ambiental ocupacional",
+      "Matriz IPERC dinámica"
+    ],
+    industries: ["Construcción", "Hidroeléctrico", "Eléctrico", "Industrial", "Minería", "Servicios"],
+    image: "https://i.postimg.cc/sDghnpct/Captura-de-pantalla-2026-05-08-a-la(s)-11-12-25-a-m.png",
   },
   {
     id: 5,
