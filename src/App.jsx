@@ -58,21 +58,21 @@ const apps = [
   image: "https://i.postimg.cc/DwBJ1mLc/Whats-App-Image-2026-05-08-at-10-04-55.jpg",
 },
 {
-  id: 3,
-  title: "Portal de Requerimientos Internos",
-  summary: "Sistema interno que centraliza y automatiza el flujo de compras y requerimientos.",
-  description: "Plataforma de gestión de requerimientos diseñada para centralizar y automatizar el flujo interno de compras. Permite a los colaboradores generar solicitudes, adjuntar cotizaciones y documentos, establecer fechas límite y monitorear el estado de cada ticket en tiempo real, reemplazando por completo el uso de correos electrónicos.",
-  category: "Gestión Operativa",
-  modules: [
-    "Generación y seguimiento de tickets",
-    "Adjunto de cotizaciones y documentos",
-    "Gestión de fechas límite",
-    "Monitoreo de estado en tiempo real",
-    "Reemplazo total del flujo por correo"
-  ],
-  industries: ["Compras", "Áreas internas con requerimientos de servicios", "Supervisores", "Logística"],
-  image: "https://i.postimg.cc/VkL9xxFL/Whats-App-Image-2026-05-08-at-10-16-10-%281%29.jpg",
-},
+    id: 3,
+    title: "Portal de Requerimientos Internos",
+    summary: "Sistema interno que centraliza y automatiza el flujo de compras y requerimientos.",
+    description: "Plataforma de gestión de requerimientos diseñada para centralizar y automatizar el flujo interno de compras. Permite a los colaboradores generar solicitudes, adjuntar cotizaciones y documentos, establecer fechas límite y monitorear el estado de cada ticket en tiempo real, reemplazando por completo el uso de correos electrónicos.",
+    category: "Gestión Operativa",
+    modules: [
+      "Generación y seguimiento de tickets",
+      "Adjunto de cotizaciones y documentos",
+      "Gestión de fechas límite",
+      "Monitoreo de estado en tiempo real",
+      "Reemplazo total del flujo por correo"
+    ],
+    industries: ["Compras", "Áreas internas con requerimientos", "Supervisores", "Logística"],
+    image: "https://i.postimg.cc/VkL9xxFL/Whats-App-Image-2026-05-08-at-10-16-10-(1).jpg",
+  },
   {
     id: 4,
     title: "Portal del Colaborador",
