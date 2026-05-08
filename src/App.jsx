@@ -23,6 +23,7 @@ const CATEGORY_COLORS = {
   "Finanzas":         "bg-indigo-50 text-indigo-700 border-indigo-100",
   "Educación":        "bg-pink-50 text-pink-700 border-pink-100",
   "Gestión Operativa":"bg-cyan-50 text-cyan-700 border-cyan-100",
+  "Compliance":       "bg-purple-50 text-purple-700 border-purple-100",
 };
 
 const apps = [
@@ -41,15 +42,21 @@ const apps = [
     industries: ["Construcción", "Hidroeléctrico", "Eléctrico", "Industrial", "Retail", "Servicios"],
     image: "https://i.postimg.cc/jqzbgp9n/Captura-de-pantalla-2026-05-08-a-la%28s%29-9-33-24-a-m.png",
   },
-  {
-    id: 2,
-    title: "Telemedicina Medicloud",
-    summary: "Plataforma de consultas virtuales seguras con historia clínica integrada.",
-    description: "Solución completa para atención remota que garantiza la privacidad del paciente y facilita la prescripción médica digital bajo normativas locales.",
-    category: "Salud",
-    industries: ["Salud privada", "Clínicas ocupacionales", "Empresas con plan de salud"],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
-  },
+ {
+  id: 2,
+  title: "Portal de Gestión de Proveedores",
+  summary: "Centraliza y automatiza el ciclo de cumplimiento de proveedores con trazabilidad total.",
+  description: "Portal integral que automatiza el ciclo completo de cumplimiento de proveedores. Los administradores crean servicios y auditan documentos con flujos de aprobación o rechazo vía email; los proveedores cargan facturas y evidencias de forma segura; y el área de finanzas ejecuta pagos con todos los registros y archivos organizados en Google Sheets y Drive para una trazabilidad total.",
+  category: "Compliance",
+  modules: [
+    "Supplier Portal — carga de facturas y evidencias",
+    "Admin Dashboard — gestión y auditoría de servicios",
+    "Finance View — ejecución y control de pagos",
+    "Integración nativa con Google Sheets y Drive"
+  ],
+  industries: ["Compras", "Mantenimiento", "Coordinación con proveedores", "Finanzas", "Proveedores externos"],
+  image: "https://i.postimg.cc/DwBJ1mLc/Whats-App-Image-2026-05-08-at-10-04-55.jpg",
+},
   {
     id: 3,
     title: "Inventario Médico Inteligente",
