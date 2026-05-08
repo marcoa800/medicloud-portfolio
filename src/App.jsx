@@ -306,82 +306,81 @@ const App = () => {
 
       {/* ── MODAL ── */}
       {selectedApp && (
-        <>
-          {/* Backdrop */}
-          <div
-            className="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md"
-            style={{ animation: 'fadeIn 0.2s ease' }}
-            onClick={() => setSelectedApp(null)}
-          />
+  <>
+    {/* Backdrop */}
+    <div
+      className="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md"
+      style={{ animation: 'fadeIn 0.2s ease' }}
+      onClick={() => setSelectedApp(null)}
+    />
 
-          {/* Panel */}
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 pointer-events-none"
-          >
-            <div
-              className="bg-white rounded-[2.5rem] w-full max-w-5xl max-h-[90vh] overflow-hidden relative shadow-2xl flex flex-col md:flex-row pointer-events-auto"
-              style={{ animation: 'modalIn 0.25s cubic-bezier(0.34,1.56,0.64,1) both' }}
-            >
-              <button
-                className="absolute top-6 right-6 z-20 p-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-full transition-all"
-                onClick={() => setSelectedApp(null)}
-              >
-                <X className="w-5 h-5" />
-              </button>
+    {/* Panel */}
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 pointer-events-none">
+      <div
+        className="bg-white rounded-[2.5rem] w-full max-w-6xl max-h-[92vh] overflow-hidden relative shadow-2xl flex flex-col pointer-events-auto"
+        style={{ animation: 'modalIn 0.25s cubic-bezier(0.34,1.56,0.64,1) both' }}
+      >
+        <button
+          className="absolute top-4 right-4 z-20 p-2 bg-white/90 hover:bg-white text-slate-800 rounded-full transition-all shadow-lg"
+          onClick={() => setSelectedApp(null)}
+        >
+          <X className="w-5 h-5" />
+        </button>
 
-              {/* Image */}
-              <div className="w-full md:w-5/12 h-64 md:h-auto relative flex-shrink-0">
-                <img
-                  src={selectedApp.image}
-                  alt={selectedApp.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/5" />
+        <div className="flex flex-col lg:flex-row overflow-hidden">
+          {/* Image — ahora más grande y SIN crop */}
+          <div className="w-full lg:w-7/12 bg-slate-100 flex items-center justify-center p-4 lg:p-6 max-h-[60vh] lg:max-h-[92vh]">
+            <img
+              src={selectedApp.image}
+              alt={selectedApp.title}
+              className="w-full h-full object-contain rounded-2xl shadow-md"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="w-full lg:w-5/12 p-8 lg:p-10 overflow-y-auto bg-white">
+            <div className="mb-5">
+              <span className={`px-4 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest border ${CATEGORY_COLORS[selectedApp.category] ?? 'bg-blue-50 text-blue-700 border-blue-100'}`}>
+                {selectedApp.category}
+              </span>
+            </div>
+
+            <h2 className="text-2xl lg:text-3xl font-black text-slate-900 mb-5 leading-tight">
+              {selectedApp.title}
+            </h2>
+
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Ficha Técnica</h4>
+                <p className="text-slate-600 leading-relaxed text-base">{selectedApp.description}</p>
               </div>
 
-              {/* Content */}
-              <div className="w-full md:w-7/12 p-8 md:p-14 overflow-y-auto">
-                <div className="mb-6">
-                  <span className={`px-4 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest border ${CATEGORY_COLORS[selectedApp.category] ?? 'bg-blue-50 text-blue-700 border-blue-100'}`}>
-                    {selectedApp.category}
-                  </span>
+              <div>
+                <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-3">Arquitectura</h4>
+                <div className="flex flex-wrap gap-2">
+                  {selectedApp.tech.map(t => (
+                    <span key={t} className="px-3 py-1.5 bg-slate-50 text-slate-700 rounded-lg text-xs font-bold border border-slate-100">
+                      {t}
+                    </span>
+                  ))}
                 </div>
+              </div>
 
-                <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6 leading-tight">
-                  {selectedApp.title}
-                </h2>
-
-                <div className="space-y-8">
-                  <div>
-                    <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-3">Ficha Técnica</h4>
-                    <p className="text-slate-600 leading-relaxed text-lg">{selectedApp.description}</p>
-                  </div>
-
-                  <div>
-                    <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Arquitectura de Software</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedApp.tech.map(t => (
-                        <span key={t} className="px-4 py-2 bg-slate-50 text-slate-700 rounded-xl text-xs font-bold border border-slate-100 shadow-sm">
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="pt-8 border-t border-slate-100 flex flex-col sm:flex-row gap-4">
-                    <div className="flex-1 bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 select-none">
-                      Solicitar Presentación
-                    </div>
-                    <div className="px-8 py-4 border border-slate-200 rounded-2xl font-bold flex items-center justify-center gap-2 text-slate-600 select-none">
-                      Contactar TI
-                    </div>
-                  </div>
+              <div className="pt-6 border-t border-slate-100 flex flex-col gap-3">
+                <div className="bg-slate-900 text-white px-6 py-3 rounded-2xl font-bold flex items-center justify-center gap-2 select-none">
+                  Solicitar Presentación
+                </div>
+                <div className="px-6 py-3 border border-slate-200 rounded-2xl font-bold flex items-center justify-center gap-2 text-slate-600 select-none">
+                  Contactar TI
                 </div>
               </div>
             </div>
           </div>
-        </>
-      )}
+        </div>
+      </div>
+    </div>
+  </>
+)}
 
       {/* ── BACK TO TOP ── */}
       {showTop && (
