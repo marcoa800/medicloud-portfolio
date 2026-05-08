@@ -26,14 +26,14 @@ const CATEGORY_COLORS = {
 
 const apps = [
   {
-    id: 1,
-    title: `Presupuesto SSO ${YEAR}`,
-    summary: "Sistema integral para la gestión y proyección de presupuestos de Seguridad y Salud Ocupacional.",
-    description: "Nuestra plataforma insignia permite a las organizaciones proyectar costos de EMOs, gestionar adicionales por reglas de puesto y monitorear el estado de salud de la población trabajadora con analítica avanzada en tiempo real.",
-    category: "Salud Ocupacional",
-    tech: ["React", "Tailwind", "Firebase", "Charts.js"],
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800",
-  },
+  id: 1,
+  title: "App SSOMA Maestra",
+  summary: "Plataforma integral SSOMA con módulos de EMOs, KPIs, documentación y capacitaciones.",
+  description: "Sistema central de gestión de Seguridad, Salud Ocupacional y Medio Ambiente. Integra módulos de Exámenes Médicos Ocupacionales (EMOs), Indicadores Clave de Desempeño (KPIs), control documentario y seguimiento de participación en capacitaciones, todo unificado en un solo dashboard.",
+  category: "Salud Ocupacional",
+  tech: ["React", "Supabase", "Tailwind", "Vercel"],
+  image: "https://i.postimg.cc/jqzbgp9n/Captura-de-pantalla-2026-05-08-a-la%28s%29-9-33-24-a-m.png",
+},
   {
     id: 2,
     title: "Telemedicina Medicloud",
