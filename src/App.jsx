@@ -104,7 +104,7 @@ const apps = [
     description: "Plataforma de e-learning para cumplimiento legal. Seguimiento de asistencia, evaluaciones automatizadas y emisión de certificados digitales.",
     category: "Educación",
     industries: ["Construcción", "Minería", "Industria", "Servicios"],
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800",
+    image: "https://i.postimg.cc/HkY189Qh/Captura-de-pantalla-2026-05-08-a-la(s)-11-46-03-a-m.png",
   },
   {
     id: 7,
