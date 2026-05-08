@@ -85,7 +85,7 @@ const apps = [
       "Monitoreo ambiental ocupacional",
       "Matriz IPERC dinámica"
     ],
-    industries: [Salud Ocupacional],
+    industries: ["Salud Ocupacional"],
     image: "https://i.postimg.cc/sDghnpct/Captura-de-pantalla-2026-05-08-a-la(s)-11-12-25-a-m.png",
   },
   {
@@ -94,7 +94,7 @@ const apps = [
     summary: "Obtener proyecciones sobre costos de exámenes médicos",
     description: "Sistema para comparar costos de perfiles y tipos de exámenes médicos",
     category: "Salud Ocupacional",
-    industries: [Salud Ocupacional],
+    industries: ["Salud Ocupacional"],
     image: "https://i.postimg.cc/rsrFbwdX/Captura-de-pantalla-2026-05-08-a-la(s)-11-25-11-a-m.png",
   },
   {
