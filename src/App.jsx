@@ -117,12 +117,12 @@ const apps = [
   },
   {
     id: 8,
-    title: "Auditoría de Cumplimiento",
-    summary: "Gestor de inspecciones y hallazgos en campo para seguridad.",
-    description: "App móvil para auditores que permite reportar incidentes, adjuntar fotos y generar planes de acción inmediatos para cumplimiento de normas ISO.",
+    title: "Monitoreo de flota de transportes",
+    summary: "Registrar, hacer inspecciones y monitorear os vehículos que se tiene disponible.",
+    description: "Sistema de monitoreo de flota.",
     category: "Gestión Operativa",
     industries: ["Construcción", "Hidroeléctrico", "Industria", "Retail"],
-    image: "https://images.unsplash.com/photo-1454165833767-027eeef1593e?auto=format&fit=crop&q=80&w=800",
+    image: "https://i.postimg.cc/Y2v6k5T0/Captura-de-pantalla-2026-05-08-a-la(s)-11-53-17-a-m.png",
   }
 ];
 
